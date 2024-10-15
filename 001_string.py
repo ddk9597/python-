@@ -193,3 +193,36 @@ pi = 3.141592653589793
 myStr = f"{pi:6.5f}"
 print(myStr) # 3.14159
 myStr2 = f"{pi:6.7f}" # 3.14159 반올림 처리 되는 것을 확인함.
+
+# 타입 변환 
+# 정수, 실수, 문자열 각 타입은 서로 다른 타입으로 변경될 수 있음(타입 변환)
+
+# 정수를 실수로 변경하기
+year = "2024"
+year2 = int(year)
+print (year2) # 2024
+print (type(year2)) # <class 'int'>
+
+# 쉼표가 있는 숫자를 정수로 형변환하기
+price = "1,000,000"
+# 콤마 제거 후 형변환
+price2 = price.replace(",", "")
+price3 = int(price2)
+print (price3) # 1000000
+print(type(price3)) # <class 'int'>
+
+# 정수형을 문자형으로 변환하기
+year = 2024
+ymd = str(year) + "-10-15"
+print (ymd) # 2024-10-15
+
+# 정수를 실수로 변환하기 : float(정수)
+integer = 10000
+float = float(integer)
+print (float) # 10000.0
+
+# 실수를 정수로 변환하기 : int(실수)
+# 소수점 아래 숫자는 버려지고 정수로 변환됨에 주의해야 한다.
+num =10.5
+int2 = int(num)
+print(int2) # 10
