@@ -173,3 +173,16 @@ print(f"{name}님의 총점은 {점수}점, 평균 점수는 {평균}, 나이는
 # 변수명을 한글로 해도 되는구나(당연하지만 알아둬서 나쁠 건 없지)
 
 # f-string 
+btc_symbol = 'BTC/KRW'
+btc_price = 28300000
+
+doge_symbol = "DOGE/KRW"
+doge_price = 193
+print(f"암호화폐 : {btc_symbol}, 현재가 : {btc_price}") # 암호화폐 : BTC/KRW, 현재가 : 28300000
+print(f"암호화폐 : {doge_symbol}, 현재가 : {doge_price}") # 암호화폐 : DOGE/KRW, 현재가 : 193
+# 값을 정렬하여 출력하기
+# 기본 자릿수 10칸으로 지정 후 우측 정렬 {변수 : >10}
+# 천 단위에서 쉼표를 표시하려면 {변수:, } 라고 적어두면 된다.
+
+print(f"암호화폐 : {btc_symbol:>10}, 현재가 : {btc_price:>10,}")   # 암호화폐 :    BTC/KRW, 현재가 : 28,300,000
+print(f"암호화폐 : {doge_symbol:>10}, 현재가 : {doge_price:>10,}") # 암호화폐 :   DOGE/KRW, 현재가 :        193
